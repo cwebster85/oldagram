@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro, sans-serif
+}
+
+/* SEMANTIC HTML */
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+section {
+    display: inline-flex;
+}
+
+/* CONTAINERS */
+
+#icons-container {
+    height: 25px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#container p {
+    line-height: 5px;
+}
+
+#comments-container {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: -50px;
+}
+
+
+/* IMAGES */
+.logo {
+    padding: 5px 5px;
+}
+
+#avatar {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#posts-avatar {
+    border-radius: 50%;
+    width: 35px;
+    padding: 8px 10px;
+    margin: -3px 0 0 0;
+}
+
+#posts-image {
+    width: 100%;
+}
+
+.icon {
+    margin-left: 5px;  
+}
+
+.icon:hover, 
+.icon:focus {
+    opacity: 0.5;
+}
+
+/* POSTS DETAILS */
+
+#user-details {
+    margin-top: 20px;
+}
+
+#posts-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#posts-location,
+#posts-likes {
+    font-size: 12px;
+}
+
+#posts-likes {
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+#posts-username {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#posts-comment {
+    font-size: 14px;
+    margin-left: 5px;
+}
