@@ -37,29 +37,30 @@ function render() {
     for(let i=0;i<posts.length;i++) {
         postsEl.innerHTML+=
 
-        `<section id="user-details">
+        `
+        <section>
+            <div id="user-details">
                 <img id="posts-avatar" src=${posts[i].avatar}>
-                <div id="container">
+                <span>
                     <p id="posts-name">${posts[i].name}</p>
-                    <p id="posts-location">${posts[i].location}</p>
-                </div>
-            </section>
-            <section>
-                <div id="img-container">
-                    <img id="posts-image" src=${posts[i].post}>
-                </div>
-            </section>
-                <div id="icons-container">
+                    <p id="posts-location">${posts[i].location}</p> 
+                </span>
+             </div>
+            <div id="img-container">
+                <img id="posts-image" src=${posts[i].post}>
+            </div>
+            <div id="icons-container">
                     <img class="post-interaction-icon" src="${posts[i].liked ? "images/red-heart-icon.png" : "images/icon-heart.png"}" alt="heart icon" onclick="likePost(${i})">
-
                     <img class="icon comm" src="images/icon-comment.png" alt="icon">
                     <img class="icon msg" src="images/icon-dm.png" alt="dm">
-                </div>
+            </div>
                 <p id="posts-likes">${posts[i].likes} likes</p>
             <div id="comments-container">
                 <p id="posts-username">${posts[i].username}</p>
                 <p id="posts-comment">${posts[i].comment}</p>
-            </div>`
+            </div>
+        </section>
+        `
     }
 }
 
